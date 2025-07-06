@@ -112,5 +112,15 @@ body {
 }
 
 .col:hover {
-    background-c
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.col img {
+    width: 36px;
+}
+
+.humidity,
+.wind {
+    font-size: 16px;
+    color: #f1f5f9;
 }
