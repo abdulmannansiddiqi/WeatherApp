@@ -4,13 +4,12 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 const searchBox = document.querySelector('.search input')
 const searchBtn = document.querySelector('.search button')
 const error = document.querySelector('.error')
-const weather = document.querySelector('.weather') // Assuming you have a weather container
-
+const weather = document.querySelector('.weather')
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
 
     if (response.status === 404) {
-        alert('enter valid city namexx')
+        alert('enter valid city name')
         error.style.display = 'block'
         weather.style.display = 'none'
     } else {
